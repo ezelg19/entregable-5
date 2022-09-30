@@ -1,1 +1,22 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title Products Pug Version
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css')
 
+body(style={margin: '2.5% 10%'})
+    a(href="http://localhost:4000/") Formulario
+    a -------
+    a(href="http://localhost:4000/productos") Productos
+    h1 Cargar producto
+    form(action="/productos", method='POST') 
+        label(for="title") Title
+        input(type="text" name="title" id="title" )
+        br
+        label(for="price") Price
+        input(type="text" name="price" id="price" )
+        br
+        label(for="thumbnail") Thumbnail
+        input(type="file" name="thumbnail" id="thumbnail" )
+        br
+        input(type="submit" value="Enviar")
